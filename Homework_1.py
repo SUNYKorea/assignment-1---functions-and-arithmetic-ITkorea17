@@ -44,13 +44,19 @@ def what_to_wear(celsius):
 # TODO: Fill the functions shoelace_triangle_area, euclidean_distance and
 # compute_triangle_perimeter from scratch  
 
+# Rewriting shoelace formula. Usage of Parenthesis to be sure and clear.
+
 def shoelace_triangle_area(x1, y1, x2, y2, x3, y3):
     TriangleArea = abs(((x1*y2 + x2*y3 + x3*y1) - (x1*y3 + x2*y1 + x3*y2))/2)
     return TriangleArea
 
+# Rewriting euclidean formula.
+
 def euclidean_distance(x1, y1, x2, y2):
     SideLength = ((x1 - x2)**2 + (y1 - y2)**2) ** 0.5
     return SideLength
+
+# Implementing euclidean formula to return parameter.
 
 def compute_triangle_perimeter(x1, y1, x2, y2, x3, y3):
     P1_to_P2 = euclidean_distance(x1, y1, x2, y2)
@@ -64,15 +70,24 @@ def compute_triangle_perimeter(x1, y1, x2, y2, x3, y3):
 # ----------------- Compute the area of a regular polygon -----------------------
 # TODO: Fill the functions deg2rad, apothem  and polygon_area 
 
+# To convert degrees to radians, multiply that quantity with (pi/180)
 
 def deg2rad(deg):
-    ...
+    RadianValue = deg * ((22/7)/180)
+    return RadianValue
+
+# Rewrite apothem formula. implement math import for tangent, and function deg2rad for radian conversion
 
 def apothem(number_sides, length_side):
-   ...
+   import math
+   ApothemValue = length_side / (2 * (math.tan(deg2rad(180/number_sides))))
+   return ApothemValue
+
+# Rewrite regular polygon area formula. Implement apothem function.
 
 def polygon_area(number_sides, length_side):
-   ...
+   AreaValue = (number_sides * length_side * apothem(number_sides, length_side) / 2)
+   return AreaValue
 
 
 # ---------------------------- Test -------------------------------------
