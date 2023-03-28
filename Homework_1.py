@@ -71,6 +71,7 @@ def compute_triangle_perimeter(x1, y1, x2, y2, x3, y3):
 # TODO: Fill the functions deg2rad, apothem  and polygon_area 
 
 # To convert degrees to radians, multiply that quantity with (pi/180)
+# For sake of convinence, assume pi = 22/7.
 
 def deg2rad(deg):
     RadianValue = deg * ((22/7)/180)
