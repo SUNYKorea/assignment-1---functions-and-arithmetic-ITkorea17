@@ -1,5 +1,6 @@
-# Name:
-# SBUID: 
+# Name: Intae Kim   
+# SBUID: 115269136
+# Email: intae.kim@stonybrook.edu
 
 # Remove the ellipses (...) when writing your solutions.
 
@@ -7,11 +8,36 @@
 # ----------------- Convert Fahrenheit to Celsius -------------------------------
 # TODO: Complete the implementation of fahrenheit2celsius () and what_to_wear(). 
 
-def fahrenheit2celsius(fahrenheit): 
-   ...
+# Simple, Just arithmetics.
 
+def fahrenheit2celsius(fahrenheit): 
+   CelsiusConversion = (5/9) * (fahrenheit - 32)
+   return CelsiusConversion
+
+# Since test does not implement printing of function values, this function can be void.
 def what_to_wear(celsius):
-   ...
+   if celsius < -10:
+       print("Wear Puffy Jacket")
+   elif celsius == -10:
+       print("Choose between Puffy Jacket and Scarf")
+   elif -10 < celsius < 0:
+       print("Wear Scarf")
+   elif celsius == 0:
+       print("Choose between Scarf and Sweater")
+   elif 0 < celsius < 10:
+       print("Wear Sweater")
+   elif celsius == 10:
+       print("Choose between Sweater and Light Jacket")
+       
+   elif 10 < celsius < 20:
+       print("Wear Light Jacket")
+      
+   elif celsius == 20:
+       print("Choose between Light Jacket and T-shirt")
+       
+   else:
+       print("Wear T-shirt")
+       
 
 # ---------------------------- Exercise II --------------------------------------
 # ----------------- Area and perimeter of a triangle  ---------------------------
@@ -19,7 +45,7 @@ def what_to_wear(celsius):
 # compute_triangle_perimeter from scratch  
 
 def shoelace_triangle_area(x1, y1, x2, y2, x3, y3):
-    ...
+    
 
 def euclidean_distance(x1, y1, x2, y2):
     ...
