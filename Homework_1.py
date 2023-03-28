@@ -45,13 +45,19 @@ def what_to_wear(celsius):
 # compute_triangle_perimeter from scratch  
 
 def shoelace_triangle_area(x1, y1, x2, y2, x3, y3):
-    
+    TriangleArea = abs(((x1*y2 + x2*y3 + x3*y1) - (x1*y3 + x2*y1 + x3*y2))/2)
+    return TriangleArea
 
 def euclidean_distance(x1, y1, x2, y2):
-    ...
+    SideLength = ((x1 - x2)**2 + (y1 - y2)**2) ** 0.5
+    return SideLength
 
 def compute_triangle_perimeter(x1, y1, x2, y2, x3, y3):
-    ...
+    P1_to_P2 = euclidean_distance(x1, y1, x2, y2)
+    P2_to_P3 = euclidean_distance(x2, y2, x3, y3)
+    P1_to_P3 = euclidean_distance(x1, y1, x3, y3)
+    TotalPerimeter = P1_to_P2 + P2_to_P3 + P1_to_P3
+    return TotalPerimeter
 
 
 # ---------------------------- Exercise III -------------------------------------
