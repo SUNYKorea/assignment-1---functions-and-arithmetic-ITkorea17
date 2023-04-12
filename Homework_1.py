@@ -2,6 +2,10 @@
 # SBUID: 115269136
 # Email: intae.kim@stonybrook.edu
 
+##################### SCORE ######################
+####### Very good work Score:  10/10
+#################################################
+
 # Remove the ellipses (...) when writing your solutions.
 
 # ---------------------------- Exercise I ---------------------------------------
